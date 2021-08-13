@@ -1,0 +1,362 @@
+[
+     {
+       "message": "Hi, I have recieved your message what's the next action here?  ",
+       "timeStamp": "11:60 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "We need to test these messages as a clean architecture and we want to avoid any issues regarding scalability of this  ",
+       "timeStamp": "11:59 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "We are using repository pattern to fall through abstraction so we our viewModel doesnot care where the data is coming from. What else do we need to plan for this?  ",
+       "timeStamp": "11:58 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "We need to make sure we are using dependency injection so we can mock in tests easily.  ",
+       "timeStamp": "11:57 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes that is already taken care of in this codebase.  ",
+       "timeStamp": "11:56 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "What was the timeline of this all implementation?  ",
+       "timeStamp": "11:55 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Less than 48 hours took a bit of break in between.  ",
+       "timeStamp": "11:54 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Yes thats okay its understandable as this sometimes become hectic to work with offline storage  ",
+       "timeStamp": "11:53 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "We have added some reaction functionality like facebook has in its messenger.  ",
+       "timeStamp": "11:52 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Oh really? How cool is that. Let me test that. Its the smiley icon right?  ",
+       "timeStamp": "11:51 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes you can tap on it and a pop menu kind of thing should appear containing them smileys  ",
+       "timeStamp": "11:50 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "You can even swipe through them as a pan gesture and they will move up as a cool animation.  ",
+       "timeStamp": "11:49 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Thinking of adding a haptic feedback also so you can feel while you are moving your finger across them and it would feel real nice to the user interms of a user experience point of view  ",
+       "timeStamp": "11:48 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Excellent work. Definitely go for it. This would be a plus point.  ",
+       "timeStamp": "11:47 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "What is the name of the project here?  ",
+       "timeStamp": "11:46 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Its Telebu Chat for now. Thanks for asking.  ",
+       "timeStamp": "11:45 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "If we need an api implementaion later how would that work?  ",
+       "timeStamp": "11:44 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "We dont need to change any logic here all we need to do is modify the initFetch function in dataRepository file.  ",
+       "timeStamp": "11:43 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Very nice!! So we just need to add an api call there thats all?  ",
+       "timeStamp": "11:42 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes thats most of it. Obviously we need to listen to reachabililty to see if there is no internet than we can load messages from dataBase.  ",
+       "timeStamp": "11:41 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "This is really nice. Whats the architecture name here again?  ",
+       "timeStamp": "11:40 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Lets call this clean architecture with repository pattern.  ",
+       "timeStamp": "11:39 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Any disctinction to this from usual MVVM?  ",
+       "timeStamp": "11:38 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes this provides abstraction. Now the viewModel doesnot know about where its getting data from :)  ",
+       "timeStamp": "11:37 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Oh really? This seems clean  ",
+       "timeStamp": "11:36 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes we can easily test this using tests too. Injecting dependencies and mocking stubs.  ",
+       "timeStamp": "11:35 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "What file is to look at?  ",
+       "timeStamp": "11:34 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "I think i will add some test files if i have some time.  ",
+       "timeStamp": "11:33 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Do let me know  ",
+       "timeStamp": "11:32 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "I definitely will.  ",
+       "timeStamp": "11:31 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Planning to put this on Github?  ",
+       "timeStamp": "11:30 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Yea i think i will.  ",
+       "timeStamp": "11:29 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "A private repo?  ",
+       "timeStamp": "11:28 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "I dont have an email invite so wont be accessible  ",
+       "timeStamp": "11:27 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Oh yes!! Lets get you one.  ",
+       "timeStamp": "11:26 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Once I get one I will share with you.  ",
+       "timeStamp": "11:25 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Send me the address and I will send an invite.  ",
+       "timeStamp": "11:24 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Okay i will. Btw what are we using for offline support?  ",
+       "timeStamp": "11:23 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "CoreData.  ",
+       "timeStamp": "11:22 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Excellent. Its a native choice right?  ",
+       "timeStamp": "11:21 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes it is.  ",
+       "timeStamp": "11:20 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "We may need DB migration if the app grows.  ",
+       "timeStamp": "11:19 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Yup!!! if there arent any big changes than we can use lightWeight migration. Heavy Weight ones are scary  ",
+       "timeStamp": "11:18 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "I get it  ",
+       "timeStamp": "11:17 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "How long will that take? Is that a lengthy process?  ",
+       "timeStamp": "11:16 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "I am not sure, but stackoverflow is pretty scary about it.  ",
+       "timeStamp": "11:15 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "We may have to plan this later than.  ",
+       "timeStamp": "11:14 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes sure we can.  ",
+       "timeStamp": "11:13 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "I can load through pagination right?",
+       "timeStamp": "11:12 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes you can  ",
+       "timeStamp": "11:11 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "its seamless?  ",
+       "timeStamp": "11:10 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes.  ",
+       "timeStamp": "11:09 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "How does it work?  ",
+       "timeStamp": "11:08 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Well when you scroll to 83% of the content is loads more based on total number of message or may be. Let me think again.",
+       "timeStamp": "11:07 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Sure  ",
+       "timeStamp": "11:06 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Yes its 83.3% in logic  ",
+       "timeStamp": "11:05 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Sounds fine to me.  ",
+       "timeStamp": "11:04 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "Let me know if we need to change it.  ",
+       "timeStamp": "11:03 am",
+       "userId": "2",
+       "userName": "Ammad Akhtar"
+     },
+     {
+       "message": "I will do. Signing off here.  ",
+       "timeStamp": "11:02 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     },
+     {
+       "message": "Excellent work. Will keep intouch again  ",
+       "timeStamp": "11:01 am",
+       "userId": "1",
+       "userName": "Uncle Bob"
+     }
+  ]

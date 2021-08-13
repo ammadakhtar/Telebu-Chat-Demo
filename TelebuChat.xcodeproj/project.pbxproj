@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81173F4926C4D1A9001582D9 /* CustomChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81173F4826C4D1A9001582D9 /* CustomChatViewModel.swift */; };
+		81F3ABC426C4872600C36A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3ABC326C4872600C36A3A /* AppDelegate.swift */; };
+		81F3ABC626C4872600C36A3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3ABC526C4872600C36A3A /* SceneDelegate.swift */; };
+		81F3ABCE26C4872600C36A3A /* TelebuChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81F3ABCC26C4872600C36A3A /* TelebuChat.xcdatamodeld */; };
+		81F3ABD026C4872800C36A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F3ABCF26C4872800C36A3A /* Assets.xcassets */; };
+		81F3ABD326C4872800C36A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F3ABD126C4872800C36A3A /* LaunchScreen.storyboard */; };
+		81F3ABDE26C4872800C36A3A /* TelebuChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3ABDD26C4872800C36A3A /* TelebuChatTests.swift */; };
+		81F3AC0626C487A000C36A3A /* CustomChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3AC0426C487A000C36A3A /* CustomChatViewController.swift */; };
+		81F3AC0726C487A000C36A3A /* CustomChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F3AC0526C487A000C36A3A /* CustomChatViewController.xib */; };
+		81F3AC0E26C48BBF00C36A3A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81F3AC0C26C48BBF00C36A3A /* Roboto-Bold.ttf */; };
+		81F3AC0F26C48BBF00C36A3A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81F3AC0D26C48BBF00C36A3A /* Roboto-Regular.ttf */; };
+		81F3AC1526C4918E00C36A3A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3AC1426C4918E00C36A3A /* Utility.swift */; };
+		81F3AC1E26C4923200C36A3A /* PlaceHolderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3AC1D26C4923200C36A3A /* PlaceHolderTextView.swift */; };
+		81F3AC2726C4928900C36A3A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3AC2626C4928900C36A3A /* UIColor.swift */; };
+		81F3AC2C26C492D500C36A3A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3AC2B26C492D500C36A3A /* UIView.swift */; };
+		81F3AC3126C493E200C36A3A /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3AC3026C493E200C36A3A /* UITableView.swift */; };
+		81F3AC3826C4943A00C36A3A /* OutGoingChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F3AC3626C4943A00C36A3A /* OutGoingChatTableViewCell.xib */; };
+		81F3AC3926C4943A00C36A3A /* OutGoingChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3AC3726C4943A00C36A3A /* OutGoingChatTableViewCell.swift */; };
+		81F3AC3F26C4944B00C36A3A /* InComingChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3AC3D26C4944B00C36A3A /* InComingChatTableViewCell.swift */; };
+		81F3AC5226C49CFB00C36A3A /* InComingChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F3AC3E26C4944B00C36A3A /* InComingChatTableViewCell.xib */; };
+		81FE5D8C26C4DD5A002467C9 /* PersistanceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5D8B26C4DD5A002467C9 /* PersistanceStore.swift */; };
+		81FE5DA826C4E0D2002467C9 /* CDMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5DA626C4E0D2002467C9 /* CDMessage+CoreDataClass.swift */; };
+		81FE5DA926C4E0D2002467C9 /* CDMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5DA726C4E0D2002467C9 /* CDMessage+CoreDataProperties.swift */; };
+		81FE5DAE26C4E67F002467C9 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5DAD26C4E67F002467C9 /* PersistentStorage.swift */; };
+		81FE5DBD26C564B4002467C9 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5DBC26C564B4002467C9 /* DataRepository.swift */; };
+		81FE5DC926C56AEA002467C9 /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = 81FE5DC826C56AEA002467C9 /* messages.json */; };
+		81FE5DCF26C580B2002467C9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5DCE26C580B2002467C9 /* Message.swift */; };
+		81FE5DEF26C58CBD002467C9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5DEE26C58CBD002467C9 /* Constant.swift */; };
+		81FE5DF826C5C0F4002467C9 /* ChatCellUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5DF726C5C0F4002467C9 /* ChatCellUIModel.swift */; };
+		81FE5E0626C5C5F9002467C9 /* MockDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5E0526C5C5F9002467C9 /* MockDataRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81F3ABDA26C4872800C36A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81F3ABB826C4872600C36A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81F3ABBF26C4872600C36A3A;
+			remoteInfo = TelebuChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		81173F4826C4D1A9001582D9 /* CustomChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChatViewModel.swift; sourceTree = "<group>"; };
+		81F3ABC026C4872600C36A3A /* TelebuChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelebuChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F3ABC326C4872600C36A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81F3ABC526C4872600C36A3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		81F3ABCD26C4872600C36A3A /* TelebuChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TelebuChat.xcdatamodel; sourceTree = "<group>"; };
+		81F3ABCF26C4872800C36A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81F3ABD226C4872800C36A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81F3ABD426C4872800C36A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F3ABD926C4872800C36A3A /* TelebuChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelebuChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F3ABDD26C4872800C36A3A /* TelebuChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelebuChatTests.swift; sourceTree = "<group>"; };
+		81F3ABDF26C4872800C36A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F3AC0426C487A000C36A3A /* CustomChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomChatViewController.swift; sourceTree = "<group>"; };
+		81F3AC0526C487A000C36A3A /* CustomChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomChatViewController.xib; sourceTree = "<group>"; };
+		81F3AC0C26C48BBF00C36A3A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		81F3AC0D26C48BBF00C36A3A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		81F3AC1426C4918E00C36A3A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		81F3AC1D26C4923200C36A3A /* PlaceHolderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTextView.swift; sourceTree = "<group>"; };
+		81F3AC2626C4928900C36A3A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		81F3AC2B26C492D500C36A3A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		81F3AC3026C493E200C36A3A /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		81F3AC3626C4943A00C36A3A /* OutGoingChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OutGoingChatTableViewCell.xib; sourceTree = "<group>"; };
+		81F3AC3726C4943A00C36A3A /* OutGoingChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutGoingChatTableViewCell.swift; sourceTree = "<group>"; };
+		81F3AC3D26C4944B00C36A3A /* InComingChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InComingChatTableViewCell.swift; sourceTree = "<group>"; };
+		81F3AC3E26C4944B00C36A3A /* InComingChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InComingChatTableViewCell.xib; sourceTree = "<group>"; };
+		81FE5D8B26C4DD5A002467C9 /* PersistanceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceStore.swift; sourceTree = "<group>"; };
+		81FE5DA626C4E0D2002467C9 /* CDMessage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDMessage+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		81FE5DA726C4E0D2002467C9 /* CDMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDMessage+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		81FE5DAD26C4E67F002467C9 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		81FE5DBC26C564B4002467C9 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		81FE5DC826C56AEA002467C9 /* messages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = messages.json; sourceTree = "<group>"; };
+		81FE5DCE26C580B2002467C9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		81FE5DEE26C58CBD002467C9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		81FE5DF726C5C0F4002467C9 /* ChatCellUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellUIModel.swift; sourceTree = "<group>"; };
+		81FE5E0526C5C5F9002467C9 /* MockDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81F3ABBD26C4872600C36A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F3ABD626C4872800C36A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81173F4726C4D18C001582D9 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				81173F4826C4D1A9001582D9 /* CustomChatViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		81173F5026C4D462001582D9 /* InComingChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				81F3AC3D26C4944B00C36A3A /* InComingChatTableViewCell.swift */,
+				81F3AC3E26C4944B00C36A3A /* InComingChatTableViewCell.xib */,
+			);
+			path = InComingChatCell;
+			sourceTree = "<group>";
+		};
+		81173F5126C4D588001582D9 /* OutGoingChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				81F3AC3726C4943A00C36A3A /* OutGoingChatTableViewCell.swift */,
+				81F3AC3626C4943A00C36A3A /* OutGoingChatTableViewCell.xib */,
+			);
+			path = OutGoingChatCell;
+			sourceTree = "<group>";
+		};
+		812734C926C5D64F00C56F1F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				81FE5DCE26C580B2002467C9 /* Message.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		812734CA26C5D65900C56F1F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				812734C926C5D64F00C56F1F /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		81A4447C26C6EBC800E56160 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				81A4447D26C6EBDE00E56160 /* Chat Scene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		81A4447D26C6EBDE00E56160 /* Chat Scene */ = {
+			isa = PBXGroup;
+			children = (
+				81173F4726C4D18C001582D9 /* View Model */,
+				81F3AC0326C4877D00C36A3A /* View */,
+			);
+			path = "Chat Scene";
+			sourceTree = "<group>";
+		};
+		81A4447E26C6EC8200E56160 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				81FE5D8A26C4DD49002467C9 /* Repository */,
+				81FE5DBB26C5649B002467C9 /* Persistance */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		81A4447F26C6ECA300E56160 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		81A4448026C6ECD100E56160 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81F3ABCF26C4872800C36A3A /* Assets.xcassets */,
+				81F3ABD126C4872800C36A3A /* LaunchScreen.storyboard */,
+				81FE5DC826C56AEA002467C9 /* messages.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		81F3ABB726C4872600C36A3A = {
+			isa = PBXGroup;
+			children = (
+				81F3ABC226C4872600C36A3A /* TelebuChat */,
+				81F3ABDC26C4872800C36A3A /* TelebuChatTests */,
+				81F3ABC126C4872600C36A3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81F3ABC126C4872600C36A3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81F3ABC026C4872600C36A3A /* TelebuChat.app */,
+				81F3ABD926C4872800C36A3A /* TelebuChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81F3ABC226C4872600C36A3A /* TelebuChat */ = {
+			isa = PBXGroup;
+			children = (
+				81F3ABD426C4872800C36A3A /* Info.plist */,
+				81F3ABFF26C4876F00C36A3A /* Application */,
+				81A4447C26C6EBC800E56160 /* Presentation */,
+				812734CA26C5D65900C56F1F /* Domain */,
+				81A4447E26C6EC8200E56160 /* Data */,
+				81FE5DED26C58CAA002467C9 /* Constant */,
+				81F3AC2526C4927300C36A3A /* Extensions */,
+				81F3AC1C26C4921A00C36A3A /* Custom Views */,
+				81F3AC1326C4918100C36A3A /* Utility */,
+				81A4448026C6ECD100E56160 /* Resources */,
+				81F3AC0B26C48B9F00C36A3A /* Fonts */,
+			);
+			path = TelebuChat;
+			sourceTree = "<group>";
+		};
+		81F3ABDC26C4872800C36A3A /* TelebuChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				81FE5E0426C5C5DD002467C9 /* Mocks */,
+				81F3ABDD26C4872800C36A3A /* TelebuChatTests.swift */,
+				81F3ABDF26C4872800C36A3A /* Info.plist */,
+			);
+			path = TelebuChatTests;
+			sourceTree = "<group>";
+		};
+		81F3ABFF26C4876F00C36A3A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				81F3ABC326C4872600C36A3A /* AppDelegate.swift */,
+				81F3ABC526C4872600C36A3A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		81F3AC0326C4877D00C36A3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81F3AC3526C4941800C36A3A /* Cells */,
+				81F3AC0426C487A000C36A3A /* CustomChatViewController.swift */,
+				81F3AC0526C487A000C36A3A /* CustomChatViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81F3AC0B26C48B9F00C36A3A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				81F3AC0C26C48BBF00C36A3A /* Roboto-Bold.ttf */,
+				81F3AC0D26C48BBF00C36A3A /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		81F3AC1326C4918100C36A3A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				81F3AC1426C4918E00C36A3A /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		81F3AC1C26C4921A00C36A3A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				81F3AC1D26C4923200C36A3A /* PlaceHolderTextView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		81F3AC2526C4927300C36A3A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81F3AC2626C4928900C36A3A /* UIColor.swift */,
+				81F3AC2B26C492D500C36A3A /* UIView.swift */,
+				81F3AC3026C493E200C36A3A /* UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81F3AC3526C4941800C36A3A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				81FE5DF626C5C0D7002467C9 /* UI Model */,
+				81173F5126C4D588001582D9 /* OutGoingChatCell */,
+				81173F5026C4D462001582D9 /* InComingChatCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		81FE5D7F26C4DD00002467C9 /* CoreDataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				81FE5DA626C4E0D2002467C9 /* CDMessage+CoreDataClass.swift */,
+				81FE5DA726C4E0D2002467C9 /* CDMessage+CoreDataProperties.swift */,
+				81FE5DAD26C4E67F002467C9 /* PersistentStorage.swift */,
+				81F3ABCC26C4872600C36A3A /* TelebuChat.xcdatamodeld */,
+			);
+			path = CoreDataFiles;
+			sourceTree = "<group>";
+		};
+		81FE5D8A26C4DD49002467C9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				81FE5DBC26C564B4002467C9 /* DataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		81FE5DBB26C5649B002467C9 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				81A4447F26C6ECA300E56160 /* Core Data */,
+				81FE5D8B26C4DD5A002467C9 /* PersistanceStore.swift */,
+				81FE5D7F26C4DD00002467C9 /* CoreDataFiles */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		81FE5DED26C58CAA002467C9 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				81FE5DEE26C58CBD002467C9 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		81FE5DF626C5C0D7002467C9 /* UI Model */ = {
+			isa = PBXGroup;
+			children = (
+				81FE5DF726C5C0F4002467C9 /* ChatCellUIModel.swift */,
+			);
+			path = "UI Model";
+			sourceTree = "<group>";
+		};
+		81FE5E0426C5C5DD002467C9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				81FE5E0526C5C5F9002467C9 /* MockDataRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81F3ABBF26C4872600C36A3A /* TelebuChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F3ABED26C4872800C36A3A /* Build configuration list for PBXNativeTarget "TelebuChat" */;
+			buildPhases = (
+				81F3ABBC26C4872600C36A3A /* Sources */,
+				81F3ABBD26C4872600C36A3A /* Frameworks */,
+				81F3ABBE26C4872600C36A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelebuChat;
+			productName = TelebuChat;
+			productReference = 81F3ABC026C4872600C36A3A /* TelebuChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81F3ABD826C4872800C36A3A /* TelebuChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F3ABF026C4872800C36A3A /* Build configuration list for PBXNativeTarget "TelebuChatTests" */;
+			buildPhases = (
+				81F3ABD526C4872800C36A3A /* Sources */,
+				81F3ABD626C4872800C36A3A /* Frameworks */,
+				81F3ABD726C4872800C36A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81F3ABDB26C4872800C36A3A /* PBXTargetDependency */,
+			);
+			name = TelebuChatTests;
+			productName = TelebuChatTests;
+			productReference = 81F3ABD926C4872800C36A3A /* TelebuChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81F3ABB826C4872600C36A3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					81F3ABBF26C4872600C36A3A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					81F3ABD826C4872800C36A3A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 81F3ABBF26C4872600C36A3A;
+					};
+				};
+			};
+			buildConfigurationList = 81F3ABBB26C4872600C36A3A /* Build configuration list for PBXProject "TelebuChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81F3ABB726C4872600C36A3A;
+			productRefGroup = 81F3ABC126C4872600C36A3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81F3ABBF26C4872600C36A3A /* TelebuChat */,
+				81F3ABD826C4872800C36A3A /* TelebuChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81F3ABBE26C4872600C36A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F3AC0726C487A000C36A3A /* CustomChatViewController.xib in Resources */,
+				81F3ABD326C4872800C36A3A /* LaunchScreen.storyboard in Resources */,
+				81F3AC0F26C48BBF00C36A3A /* Roboto-Regular.ttf in Resources */,
+				81F3AC3826C4943A00C36A3A /* OutGoingChatTableViewCell.xib in Resources */,
+				81F3AC5226C49CFB00C36A3A /* InComingChatTableViewCell.xib in Resources */,
+				81FE5DC926C56AEA002467C9 /* messages.json in Resources */,
+				81F3AC0E26C48BBF00C36A3A /* Roboto-Bold.ttf in Resources */,
+				81F3ABD026C4872800C36A3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F3ABD726C4872800C36A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81F3ABBC26C4872600C36A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F3AC2C26C492D500C36A3A /* UIView.swift in Sources */,
+				81F3AC1526C4918E00C36A3A /* Utility.swift in Sources */,
+				81F3AC2726C4928900C36A3A /* UIColor.swift in Sources */,
+				81FE5DCF26C580B2002467C9 /* Message.swift in Sources */,
+				81F3AC1E26C4923200C36A3A /* PlaceHolderTextView.swift in Sources */,
+				81F3ABCE26C4872600C36A3A /* TelebuChat.xcdatamodeld in Sources */,
+				81F3AC3126C493E200C36A3A /* UITableView.swift in Sources */,
+				81F3ABC426C4872600C36A3A /* AppDelegate.swift in Sources */,
+				81FE5DEF26C58CBD002467C9 /* Constant.swift in Sources */,
+				81FE5DBD26C564B4002467C9 /* DataRepository.swift in Sources */,
+				81FE5D8C26C4DD5A002467C9 /* PersistanceStore.swift in Sources */,
+				81FE5DAE26C4E67F002467C9 /* PersistentStorage.swift in Sources */,
+				81FE5DA826C4E0D2002467C9 /* CDMessage+CoreDataClass.swift in Sources */,
+				81F3AC3F26C4944B00C36A3A /* InComingChatTableViewCell.swift in Sources */,
+				81FE5DF826C5C0F4002467C9 /* ChatCellUIModel.swift in Sources */,
+				81FE5DA926C4E0D2002467C9 /* CDMessage+CoreDataProperties.swift in Sources */,
+				81173F4926C4D1A9001582D9 /* CustomChatViewModel.swift in Sources */,
+				81F3AC3926C4943A00C36A3A /* OutGoingChatTableViewCell.swift in Sources */,
+				81F3ABC626C4872600C36A3A /* SceneDelegate.swift in Sources */,
+				81F3AC0626C487A000C36A3A /* CustomChatViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F3ABD526C4872800C36A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F3ABDE26C4872800C36A3A /* TelebuChatTests.swift in Sources */,
+				81FE5E0626C5C5F9002467C9 /* MockDataRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81F3ABDB26C4872800C36A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81F3ABBF26C4872600C36A3A /* TelebuChat */;
+			targetProxy = 81F3ABDA26C4872800C36A3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81F3ABD126C4872800C36A3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81F3ABD226C4872800C36A3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81F3ABEB26C4872800C36A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81F3ABEC26C4872800C36A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81F3ABEE26C4872800C36A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TelebuChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc.telebu.TelebuChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81F3ABEF26C4872800C36A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TelebuChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc.telebu.TelebuChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81F3ABF126C4872800C36A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TelebuChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc.telebu.TelebuChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelebuChat.app/TelebuChat";
+			};
+			name = Debug;
+		};
+		81F3ABF226C4872800C36A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TelebuChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc.telebu.TelebuChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelebuChat.app/TelebuChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81F3ABBB26C4872600C36A3A /* Build configuration list for PBXProject "TelebuChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F3ABEB26C4872800C36A3A /* Debug */,
+				81F3ABEC26C4872800C36A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81F3ABED26C4872800C36A3A /* Build configuration list for PBXNativeTarget "TelebuChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F3ABEE26C4872800C36A3A /* Debug */,
+				81F3ABEF26C4872800C36A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81F3ABF026C4872800C36A3A /* Build configuration list for PBXNativeTarget "TelebuChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F3ABF126C4872800C36A3A /* Debug */,
+				81F3ABF226C4872800C36A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		81F3ABCC26C4872600C36A3A /* TelebuChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				81F3ABCD26C4872600C36A3A /* TelebuChat.xcdatamodel */,
+			);
+			currentVersion = 81F3ABCD26C4872600C36A3A /* TelebuChat.xcdatamodel */;
+			path = TelebuChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 81F3ABB826C4872600C36A3A /* Project object */;
+}
