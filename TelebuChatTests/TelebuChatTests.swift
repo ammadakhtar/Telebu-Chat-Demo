@@ -30,7 +30,7 @@ class TelebuChatTests: XCTestCase {
         mockDataRepository.completedMessages = [Message]()
         
         // When
-        sut.initFetch(offSet: 0, isPagination: false)
+        sut.initFetch(offSet: 0)
         
         // Assert
         XCTAssert(mockDataRepository.isFetchMessageCalled)
@@ -47,7 +47,7 @@ class TelebuChatTests: XCTestCase {
         }
         
         //when fetching
-        sut.initFetch(offSet: 0, isPagination: false)
+        sut.initFetch(offSet: 0)
         
         // Assert
         XCTAssertTrue(loadingStatus)
@@ -60,9 +60,11 @@ class TelebuChatTests: XCTestCase {
     }
     
     func test_CreateCellViewModel_Succeeds() {
+        generateMockData()
         
         // Given
         let expect = XCTestExpectation(description: "reload closure triggered")
+        
         var messages = [Message]()
         sut.reloadTableViewClosure = { [weak self] () in
             expect.fulfill()
@@ -70,7 +72,7 @@ class TelebuChatTests: XCTestCase {
         }
         
         // When
-        sut.initFetch(offSet: 0, isPagination: false)
+        sut.initFetch(offSet: 0)
         mockDataRepository.fetchSuccess()
         
         // Number of cell view model is equal to the number of messages
@@ -78,5 +80,15 @@ class TelebuChatTests: XCTestCase {
         
         // XCTAssert reload closure triggered
         wait(for: [expect], timeout: 1.0)
+    }
+}
+
+//MARK: - State control
+
+extension TelebuChatTests {
+    private func generateMockData() {
+        mockDataRepository.completedMessages = MockDataGenerator().mockMessageData()
+        sut.initFetch(offSet: 0)
+        mockDataRepository.fetchSuccess()
     }
 }

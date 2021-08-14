@@ -37,14 +37,14 @@ final class CustomChatViewModel {
         self.dataRepo = dataRepo
     }
     
-    func initFetch(offSet: Int, isPagination: Bool) {
+    func initFetch(offSet: Int) {
         self.isLoading = true
         dataRepo.initFetch(offSet: offSet){ [weak self] result in
             self?.isLoading = false
             switch result{
             case .success(let messages):
                 if messages.count > 0 {
-                self?.processMessagesToCellModel(messages: messages, isPagination: isPagination)
+                self?.processMessagesToCellModel(messages: messages)
                 }
             case .failure(let error):
                 self?.processError(error: error)
@@ -60,7 +60,7 @@ final class CustomChatViewModel {
         self.alertMessage = error.localizedDescription
     }
     
-    private func processMessagesToCellModel(messages: [Message], isPagination: Bool) {
+    private func processMessagesToCellModel(messages: [Message]) {
         let messagesData = messages.reversed()
         self.messages.insert(contentsOf: messagesData, at: 0)
         self.cellViewModels = self.messages.map { createCellViewModel(message: $0) }

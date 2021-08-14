@@ -123,7 +123,7 @@ final class CustomChatViewController: UIViewController, UIScrollViewDelegate, UI
                 self.isLoading = false
             }
         }
-        viewModel.initFetch(offSet: offSet, isPagination: isPagination)
+        viewModel.initFetch(offSet: offSet)
     }
     
     func getTopVisibleRow () -> Int {
@@ -248,7 +248,7 @@ extension CustomChatViewController {
             isLoading = true
             offSet = offSet + 30
             oldTableViewHeight = self.tableView.contentSize.height;
-            viewModel.initFetch(offSet: offSet, isPagination: isPagination)
+            viewModel.initFetch(offSet: offSet)
         }
     }
 }
